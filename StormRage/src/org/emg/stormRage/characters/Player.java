@@ -55,7 +55,7 @@ public class Player extends Character{
 	public static float cooldown = 30;
 
 	public boolean damage = true;
-	public boolean movimiento = false;
+	public boolean root;
 	
 	public Player(TextureRegion texture, float x, float y, float speed, float hp, float attackspeed, float strength) {
 		super(texture, x, y);
@@ -83,6 +83,8 @@ public class Player extends Character{
 		this.speed=speed;
 		state = State.IDLE_UP;
 		posicion=Posicion.DOWN;
+		
+		root = false;
 	}
 	
 	public void move(Vector2 movement){
@@ -95,6 +97,7 @@ public class Player extends Character{
 		rect.x = position.x;
 		rect.y = position.y;
 		
+		//TODO QUITAR ESTO PARA VER SI ME DEJA AVANZAR
 		if(position.x<0){
 			position.x = 0;
 		}

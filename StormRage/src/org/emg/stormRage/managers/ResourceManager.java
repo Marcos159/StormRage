@@ -9,7 +9,9 @@ import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 public class ResourceManager {
 	private static Map<String, Texture> textures = new HashMap<String, Texture>();
@@ -27,7 +29,7 @@ public class ResourceManager {
 			//Cargamos Texturas
 			
 			
-			//Cargamos animaciones
+			//Cargamos animaciones PJ
 			loadResource("characters", new TextureAtlas(
 					Gdx.files.internal("characters/characters.pack")));
 			
@@ -36,7 +38,7 @@ public class ResourceManager {
 					getAtlas("characters").findRegion("pj_Move_up1"),
 					getAtlas("characters").findRegion("pj_Move_up2")));
 			animations.put("player_Atack_up",
-					new Animation(0.25f, 
+					new Animation(0.20f, 
 					getAtlas("characters").findRegion("pj_Atack_up1"),
 					getAtlas("characters").findRegion("pj_Atack_up2"),
 					getAtlas("characters").findRegion("pj_Atack_up3"),
@@ -50,7 +52,7 @@ public class ResourceManager {
 					getAtlas("characters").findRegion("pj_Move_down1"),
 					getAtlas("characters").findRegion("pj_Move_down2")));
 			animations.put("player_Atack_down",
-					new Animation(0.25f, 
+					new Animation(0.20f, 
 					getAtlas("characters").findRegion("pj_Atack_down1"),
 					getAtlas("characters").findRegion("pj_Atack_down2"),
 					getAtlas("characters").findRegion("pj_Atack_down3"),
@@ -64,7 +66,7 @@ public class ResourceManager {
 					getAtlas("characters").findRegion("pj_Move_left1"),
 					getAtlas("characters").findRegion("pj_Move_left2")));
 			animations.put("player_Atack_left",
-					new Animation(0.25f, 
+					new Animation(0.20f, 
 					getAtlas("characters").findRegion("pj_Atack_left1"),
 					getAtlas("characters").findRegion("pj_Atack_left2"),
 					getAtlas("characters").findRegion("pj_Atack_left3"),
@@ -78,7 +80,7 @@ public class ResourceManager {
 					getAtlas("characters").findRegion("pj_Move_right1"),
 					getAtlas("characters").findRegion("pj_Move_right2")));
 			animations.put("player_Atack_right",
-					new Animation(0.25f, 
+					new Animation(0.20f, 
 					getAtlas("characters").findRegion("pj_Atack_right1"),
 					getAtlas("characters").findRegion("pj_Atack_right2"),
 					getAtlas("characters").findRegion("pj_Atack_right3"),
@@ -89,6 +91,19 @@ public class ResourceManager {
 			animations.put("player_Shield",
 					new Animation(0.25f, 
 					getAtlas("characters").findRegion("pj_Idle_right1")));
+			
+			//CARGAMOS NPC
+			loadResource("npcs", new TextureAtlas(
+					Gdx.files.internal("npcs/npcs.pack")));
+			
+			animations.put("quest1",
+					new Animation(0.25f, 
+					getAtlas("npcs").findRegion("npc1")));
+			animations.put("quest2",
+					new Animation(0.25f, 
+					getAtlas("npcs").findRegion("twitch")));
+			
+			
 			//Cargamos sonidos
 			ResourceManager.loadResource("attackLink", Gdx.audio.newSound(Gdx.files.internal("sounds/attackLink.mp3")));
 			ResourceManager.loadResource("shieldSound", Gdx.audio.newSound(Gdx.files.internal("sounds/shieldSound.mp3")));

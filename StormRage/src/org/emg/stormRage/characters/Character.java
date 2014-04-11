@@ -13,8 +13,8 @@ public abstract class Character {
 	float speed;
 	
 	Animation animation;
-	TextureRegion currentFrame;
-	float stateTime;
+	public TextureRegion currentFrame;
+	public float stateTime;
 	public Rectangle rect;
 	
 	public Character(Animation animation, float x, float y) {
@@ -38,7 +38,7 @@ public abstract class Character {
 	}
 	
 	public void render(SpriteBatch batch) {
-		
+	
 		batch.draw(currentFrame, position.x, position.y);
 	}
 	

@@ -4,14 +4,13 @@ import org.emg.stormRage.StormRage;
 import org.emg.stormRage.characters.Character;
 import org.emg.stormRage.characters.Player;
 import org.emg.stormRage.characters.Player.State;
-import org.emg.stormRage.managers.ResourceManager;
 import org.emg.stormRage.managers.SpriteManager;
 import org.emg.stormRage.util.Util;
 
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.math.Vector2;
 
-public class Quest1 extends Character {
+public class Quest2 extends Character {
 	float speed;
 	
 	public enum State{
@@ -20,29 +19,30 @@ public class Quest1 extends Character {
 	
 	public State state;
 	
-	public Quest1(Animation animation, float x, float y, float speed) {
+	public Quest2(Animation animation, float x, float y, float speed) {
 		super(animation, x, y);
-		state = Quest1.State.CANCEL;
+		state = Quest2.State.CANCEL;
 		this.speed = speed;
 	}
 	
 	public void dialogoInicio(){
-		String dialogo ="Ufff... Estoy helado con esta camisa pero es la unica defensa que tengo cuando salgo al bosque." +
-				"Espera... Tengo una idea. Cuando salgas al bosque intenta buscar mis dados de la suerte. Si me los traes te daré mi " +
-				"camisa y esta te protegerá en tus aventuras.";
+		String dialogo ="Ohhh, Que quieres? Tengo demasiados problemas en la cabeza. Un malvado dragón me lanzó un " +
+				"maleficio y me convirtió en esta especie de rata mal oliente. He consultado con los magos mas poderosos" +
+				"pero me han dicho que no hay solución facil, solo me puedo curar con una de las escamas del dragón." +
+				"Si pudieras derrotarlo y traerme una de sus escamas te estaria eternamente agradecido.";
 		SpriteManager.dialogo = dialogo;
 		
-		state = Quest1.State.ACTIVE;
+		state = Quest2.State.ACTIVE;
 		
 		Util.npcText = true;
 	}
-	public void dialogoFinal(){
-		String dialogo ="Gracias viajero. Ya puedo jugar tranquilo. Toma mi camisa como te prometí" +
-				"Está helada pero te protegerá contra todas las amenazas.¡Nos vemos! *Lanza los dados para jugar*" +
-				" Mierda, donde se han metido los dados...";
+	
+	public void dialogoFin(){
+		String dialogo ="Oh, si siii... Me la has traido. Espero que no tarden mucho en preparar el antidoto. ¿Hueles eso? espera, soy yo." +
+				"No puedo seguir aguantando este olor.";
 		SpriteManager.dialogo = dialogo;
 		
-		state = Quest1.State.ACTIVE;
+		state = Quest2.State.ACTIVE;
 		
 		Util.npcText = true;
 	}
@@ -68,7 +68,7 @@ public class Quest1 extends Character {
 	@Override
 	public void update(float dt){
 		super.update(dt);
-		
+				
 		
 	}
 }

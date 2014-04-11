@@ -20,12 +20,12 @@ import com.badlogic.gdx.utils.Array;
 public class TiledMapManager {
 
 	// keys que identifican los tipos de tiles
-	public static final String COIN = "coin";
-	public static final String PLANT = "plant";
-	public static final String PLANT2 = "plant2";
-	public static final String BOX = "box";
-	public static final String BLOCKED = "blocked";
+	public static final String QUEST1 = "quest1";
+	public static final String QUEST2 = "quest2";
 	public static final String ENEMY = "enemy";
+	public static final String GHOST = "ghost";
+	public static final String BLOCK = "block";
+	public static final String BLOCKED = "blocked";
 	public static final String CHEST = "chest";
 	public static final String ANIMATION = "animation";
 	public static final String MOBILE = "mobile";

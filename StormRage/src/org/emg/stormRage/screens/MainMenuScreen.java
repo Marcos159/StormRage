@@ -8,6 +8,7 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.GL10;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
@@ -19,13 +20,13 @@ public class MainMenuScreen implements Screen {
 
 	StormRage game;
 	Stage stage;
-	OrthographicCamera camara;
+	private Texture background1;
 	
 	public MainMenuScreen(StormRage game) {
 		this.game = game;
+		 Texture.setEnforcePotImages(false);
 		
-		camara = new OrthographicCamera();
-		camara.setToOrtho(false, 1024, 768);
+		background1 = new Texture("others/backgroundforest.png");
 	}
 	
 	@Override
@@ -39,13 +40,11 @@ public class MainMenuScreen implements Screen {
 
 		Gdx.gl.glClearColor(0, 0, 0.2f, 1);
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
-		
-		camara.update();
-		game.batch.setProjectionMatrix(camara.combined);
-		
+				
 		// Muestra un menú de inicio
 		game.batch.begin();
-		game.font.draw(game.batch, "Bienvenido a Drop!!!!", 100, 150);
+		game.batch.draw(background1, 0, 0);
+		game.font.draw(game.batch, "Bienvenido a StormRage!!!!", 100, 150);
 		game.font.draw(game.batch, "Pulsa para empezar", 100, 130);
 		game.font.draw(game.batch, "Pulsa 'ESCAPE' para SALIR", 100, 110);
 		game.batch.end();

@@ -1,6 +1,7 @@
 package org.emg.stormRage.screens;
 
 import org.emg.stormRage.StormRage;
+
 import org.emg.stormRage.managers.LevelManager;
 import org.emg.stormRage.managers.ResourceManager;
 import org.emg.stormRage.managers.SpriteManager;
@@ -26,7 +27,7 @@ public class GameScreen implements Screen {
 		spriteManager = new SpriteManager(game);
 		levelManager = new LevelManager(spriteManager);
 		//TODO
-		//levelManager.loadCurrentLevel();
+		levelManager.loadMap();
 	}
 	
 	@Override
