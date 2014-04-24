@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="001-Grassland01" tilewidth="32" tileheight="32">
+  <image source="recopilacion/001-Grassland01.png" width="256" height="576"/>
+ </tileset>
+ <tileset firstgid="145" name="011-PortTown01" tilewidth="32" tileheight="32">
+  <image source="recopilacion/011-PortTown01.png" width="256" height="1024"/>
+  <tile id="6">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="401" name="npc1" tilewidth="32" tileheight="32">
+  <image source="../npcs/npc1.png" width="32" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="quest1" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="402" name="twitch" tilewidth="32" tileheight="32">
+  <image source="../npcs/twitch.png" width="32" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="quest2" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="403" name="npc3" tilewidth="32" tileheight="32">
+  <image source="../npcs/npc3.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="404" name="fantasma_down1" tilewidth="26" tileheight="32">
+  <image source="../enemies/fantasma_down1.png" width="26" height="32"/>
+ </tileset>
+ <layer name="terrain" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJztW9uOWyEMTB76jfm0feu3VkcqKksB32aMszkjRd1uwBgP4Avs8/F4PP9+fnc/736Xhdeh/tFxI/h6/G/v3ecrSa/XI2YXqe/u+5N8WLjI3B/MvSFxffPxHQh7ROx98/EdbL/B4gPBo4cPNkc3H/rPL4WcCDJiKg8fWr2i+qP3QlRGNKZCrH0GH9r+LYbVxLnIs2k2xkuhx+6j6S+1eS3aaHVbtYvODblnJLweurWtkRNtE13f0f6ofDDCDTu+tbSL2jMqg7EXrNxk8RFpY+Vj5YM8c312/452ta5/pv/uZVTiAynnwmi/CB+tz4yXLJ+BaFeVj/Z/rw/v440oLHxW4sMqS2P/SEzVx5QRIHystp3Vjsh65cxO2t9J6OcV2WfWvYHYR0g+LLIstrfac9TDGycz9obUFjnmaT6knI8ZH/9UPnacSDGtNheS4IkD3p2PCx5OZmN6xl2N442PUX6mGh+734/fIevOXpnImMg6fgU+2jiIPK8fr+Urp/wGQ14GH6i8YiazybXGD8i278THOCcEJys7aWLk7NzE2pbFx+58QuTwEqJ1sRN5jFXWBY3f1szbm+tZ4/P+c8rGlraIumIvy2uvHaKxwOhrtO0t8lFtvXH77BOp7e7GimJXi1nlMxH5kbar71c2l2obXqzO+yg852ZVPmaQ/AeKE1SuYvH9GX4m059rvpeAzBm9uaIlpzmZW17I4MNbax/lePqMuZIm1rDIR7TpoeEjcpeEkOfdY1KOGfX9J/jQthl12OnBvJOy9Jv5GWR+icw9xjboehLjPPfo0dD4QN6VsfiwtPPkjyh50X6tD2qdsPmQ8niv7aK1qZVO1vY9H4g6JsN3rNpr8kmrbNQ9lzcuHjH6l+emrVbmDl4+kDnFbIyobFY+XpEPJhcNiDojazyL30fyga4xarA6wxmxhKffaAfUXVnDeP5o1heLD6muqa3hI8edtZ0BWVdmn3EoPXZzjpyhyHzc4vdX548HKE48eiBr+NaxLX7fml+2fh5Ea4MXousBEVcw/X5rb/GD0bsNDxDnC4oLxt7Y9ZE4OcWHp8/IA2J/nmi/4ySTD29eIMV6WeuC3f5CdI1Z8hctPP3Y9XvEWaUBi4+ob/Dogb4P8Lbv+1mB4GOWU3qA8NHonDGTiwuomLVCvHRBcydgQUaO2cPDx8x+KDkI7HJ4C6J5pgeoGMl6djN46HWJ5vBR/Zh8IOuMLA5GjG8ULDiR9zes7ki965h1n+tFpi9GyOjrQOj4JuNs2qGNy4yFd3K0Y0XWv4SR31OYjc98y4KSg7zL6Hlg3iFqdFhBiodROniBzD+QciO6SEDFwxEdVojmDauxM/nwxh2Mtxns+kIbwzrnDD6ifgrxrmgEio+dr/eMgbg/lIDIEU7ygba5BOa7h4jOs1oPQldEPYa5hhlvHph7Ivu+kaEDWzYyBpVkRfRFnTGV+GCcoZ44xBtzInCSD6YPi8Yi1rFQyHiLmxVDIOVa7JJ5pnplMusmWXU41nthaVzNOrZ8RvkRZMTlO2TUu8bxmPDUuk/af4XVPQJzHBZO7HsGGPWu2RhsrO6zq+0BCSx/2COrDou+h8xG0/en8PGOHFyYrR9mrTQz/zh1Z+iFtIYYvLBqfozYNxuWGgsKiBqT9iyqzkfEv6HmlvkOpiofqBgDubYz6kzV+GDVO7zzzLZPxh2uhKx42zPPE7ap+i6LAetcT/FR/S0QEpb5nlqr7/AWCAktJyf58Lz72sUZVevCPaR5Z9dK0HFddfuvsLI7Ozff2el0nHUas/ln5uZanT4ZrLe7yPE/Cbu/Zco6k29O/qGCL6yQs1dAJRtU0uUUKtmgki6nUMkG/d+Kfyo+ee4VcfNRB59+NlTDzUUN/AElJB/7
+  </data>
+ </layer>
+ <objectgroup name="objects" width="100" height="100">
+  <object gid="401" x="119" y="152">
+   <properties>
+    <property name="quest1" value="true"/>
+   </properties>
+  </object>
+  <object gid="402" x="233" y="255">
+   <properties>
+    <property name="quest2" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="159" y="480">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="479" y="316">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="501" y="46">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="191" y="84">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="812" y="473">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="448" y="691">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="227" y="927">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1042" y="85">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="260" y="1296">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="312" y="1660">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="272" y="2080">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="260" y="2476">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="320" y="2908">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="172" y="3104">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="748" y="3100">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="796" y="2496">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1084" y="2080">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="680" y="1908">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1320" y="3032">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1136" y="3036">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1764" y="3024">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2432" y="3056">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2096" y="3012">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2036" y="2524">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2640" y="2772">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2288" y="2712">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2912" y="3040">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2944" y="2688">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1480" y="2520">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1976" y="2032">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1736" y="1720">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1368" y="1720">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="984" y="1392">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1384" y="1096">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1000" y="808">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1512" y="592">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2208" y="392">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2776" y="536">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2616" y="872">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2120" y="776">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2416" y="592">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2504" y="352">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2072" y="944">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2592" y="1344">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2568" y="1760">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2008" y="1440">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1440" y="1040">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1768" y="1128">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2896" y="1048">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="3032" y="664">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="3048" y="1536">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="3048" y="2040">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="3040" y="2400">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2784" y="2184">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="2512" y="2072">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1760" y="2128">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="1488" y="2024">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="784" y="1360">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+  <object gid="404" x="544" y="992">
+   <properties>
+    <property name="ghost" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

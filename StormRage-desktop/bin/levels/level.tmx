@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="300" height="300" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="006-G_Road02" tilewidth="32" tileheight="32">
+  <image source="C:/Users/Marcos/Desktop/tiles/tiles rpg/recopilacion/006-G_Road02.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="13" name="033-Waterfall01" tilewidth="32" tileheight="32">
+  <image source="recopilacion/033-Waterfall01.png" width="384" height="128"/>
+ </tileset>
+ <tileset firstgid="61" name="001-G_Water01" tilewidth="32" tileheight="32">
+  <image source="recopilacion/001-G_Water01.png" width="384" height="128"/>
+  <tile id="12">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="36">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="38">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="109" name="023-Sa_Undulation01" tilewidth="32" tileheight="32">
+  <image source="recopilacion/023-Sa_Undulation01.png" width="96" height="128"/>
+  <tile id="0">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="121" name="073-CI_Ground02" tilewidth="32" tileheight="32">
+  <image source="recopilacion/073-CI_Ground02.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="133" name="070-CI_Snow01" tilewidth="32" tileheight="32">
+  <image source="recopilacion/070-CI_Snow01.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="145" name="021-SnowTown01" tilewidth="32" tileheight="32">
+  <image source="recopilacion/021-SnowTown01.png" width="256" height="1280"/>
+  <tile id="19">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="51">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="53">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="67">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="68">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="69">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="105">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="106">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="152">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="156">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="160">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="164">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="168">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="172">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="176">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="180">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="188">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="189">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="190">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="191">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="192">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="196">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="200">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="204">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="208">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="212">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="213">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="214">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="215">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="216">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="217">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="218">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="219">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="220">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="465" name="001-Grassland01" tilewidth="32" tileheight="32">
+  <image source="C:/Users/Marcos/Desktop/tiles/tiles rpg/recopilacion/001-Grassland01.png" width="256" height="576"/>
+  <tile id="73">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="74">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="105">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="106">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="107">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="112">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="113">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="116">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="124">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="128">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="132">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="136">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="609" name="casa1back" tilewidth="32" tileheight="32">
+  <image source="recopilacion/casa1back.png" width="96" height="96"/>
+  <tile id="3">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="618" name="casa1" tilewidth="32" tileheight="32">
+  <image source="recopilacion/casa1.png" width="96" height="96"/>
+  <tile id="0">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="627" name="arbol1" tilewidth="32" tileheight="32">
+  <image source="recopilacion/arbol1.png" width="32" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="629" name="npc1" tilewidth="32" tileheight="32">
+  <image source="../npcs/npc1.png" width="32" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="quest1" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="630" name="twitch" tilewidth="32" tileheight="32">
+  <image source="../npcs/twitch.png" width="32" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="quest2" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="631" name="fantasma_down1" tilewidth="26" tileheight="32">
+  <image source="../enemies/fantasma_down1.png" width="26" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Capa de Patrones 1" width="300" height="300">
+  <data encoding="base64" compression="zlib">
+   eJzt3ctu3kQcxmGrAlHgCoA1sAb2kVjCvlSVkJC4i9J1Ig7hcAFcLLaopcF47LEdZ+bvPI/0Kj3k0Er1T/Md8rXrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICtXvT7LrOX/W76vcksVfI+QBu+6fdtwOVaVdKr3/rd9/t94X2ANi1d+xGnV3BdtfuiV0Cp2n2p0au/O72CiGr3xfkKKFW7L3oFlCrtwI9BdtPpFVxVSasGN4E20Cu4ni29mlrqRWlX1j7XnlYN9AquZ0uvctd3pHl8EOIq6dXafUKR5nwFcemVXkEUeqVXEIVe6RVE8RTvb9criOkp9srjgxDTU+yV8xXEpFd6BVFctVe/ZHbf6RVEddVe3a9MryCeq/bqz5X9tfCxQHuW/p+ZdGuvKXW1Ae35qN/HBfuk0yugrk/7fVawzzu9Auqq1auS5xToFZDSK72CKPRKryAKvdIriOKLfl8W7KtOr4C6aj3/Sq+APWo8v/2xe/XTzK+9nkyvoH1jk354uyv2am6vJz9Ofw60adqruWYNovZq7mylVxDT2KqlZg0i9irXqmm33B6EGKadOtKru4L32dOr0s+7dXOt0ito1/R8lb5d6tVdl+/IXeZtrld3mc97m/n928nbtbZt7R3Qpq29uu3mOzLXhlyH5s5XpU3Zc9Za+xi3ByGGI7cHc20al3Yt/f2xV8Nyr1u8tl8X/ixH+wa0ae7xwbVejf35uZtvx1or0l7t3dLZbK2j6bnK/VcQx9bnM8ydk6b3Q62daf7o/vvaxGmH1l7HuOT113PnPOcriC3t0tCq799u7Xw116uls9VSy0oeL1y77yt3e3S8X37arLlzlV5B2+aez77Wq6XOlN4WWzqnpe8z7cxa29LHDLeeq8aOAW3a2quSzmxd7vPMPV9h7jbo3Fku/ViPD8I15HqVNmuwdL468jhf7v8wTZtTehZbatLc77u/HWKZ69RSr3LPS3iIpQ3K3ZYruY9/6+ODzlcQQ65Va+eroSfTx/mObun/MC25j3/P9AriSHv1qivv1dptrS3fF1PyPTVrtwdLbxc6X0Fce89XJe1a+j7Ckp7Nvf94pls6i+3tl15B28YmTc9We3t19rb2as+ANqW9Sn+c/nww9OpZI+se4fMD7Zrr1VXU7muUQRSvMm+voHYHogyiuNqZKlW7A1EG1Fe7A1EG1Fe7A1EG1Fe7A1EG1Fe7A1EGT9VZ19R7/Z73e7/79zlh6V50/3+tiZcn/lmuNria2teUXukVMU2v163b48i1oFdtD850tFdz1/fS1q79r3dOr9oYnOkKvdp6TemVXhHT0X+fLfTK+aqdwZmu0qstzdIrvSImvdIrvSKK1no1NEOv4g7O1FqvnK9iD86kV3qlV0TxTr93D2xPr458vYfY82Qlfx+90ivaMJ419m5Pr458vbOnV3pFuz7o9+GB7enVka/3EEv7VPL30Su9og1H/322cP/Vs879V60MznSFXnWdXrUyONMVeuXxwXYGZ9IrvdIrorjC6zPoVTuDM+mVXukVUeiVXukV5NW+pvRKr6BU7WtKr/QKStW6jvRKr+AxPOQ1pVd6BVdWuwNRBtRXuwNRBtRXuwNRBtRXuwNRBtRXuwM6A5Sq3RO9AkrV7oleAaVq90SvgFK1e6JXQKnaPdErAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABozz8wVOAe
+  </data>
+ </layer>
+ <layer name="Capa de patrones 8" width="300" height="300">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="Capa de patrones 9" width="300" height="300">
+  <data encoding="base64" compression="zlib">
+   eJzt2zevHVUUBtA7DyQw0BAaBwpyLgguSAWpAEQBiIJUkOnhJ0FpuXPpf2A6kAgNoSE0hMahYF/xnhiNJt45d+Ja0ifLOuPx3GZrnzN7NhsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPjft5HvIt9Hfhj5WQDq/Bj5KfJz5JeRnwWgzq+R3yK/R/4Y+VkA6vwZ+Svyd+SfkZ8FoM7FyKXI5ciVimuccQFz4YwLmAtnXEBqx7PN5kTkZORU5Nas3VoTZ1ywTClrRtfrb4v12yN3RO6M3JW1W2vS5owLmJ+UNaPr9ffF+v2RByIPRh7K2q0B65SyZnS9/uFYfyTyaOSxyOms3RqwTilrRtX1VfMFj8f6E5EnI09Fns7q18wpwLp1rRm73KtqvuCZWH828lzk+cgLWf1a1X2AdehaM3a5V9V8wYux/lLk5cM/X8nq18wpwLp1rRl5Z1veq2q+4NVYfy3y+uGfb0TObP5L2Zo5BVi3srrQtFasU2cbrq+aL3gz1t+KvB15J/Lu4fVnKtbMKcC6da0Zu9yrzPb+78X6+5EPIh9GPsqa14D1+jjqwCe5fHq4J9uqqxnFHkuNAZagWNsAUtj3jNMXkS87/psLka8S3AdYljFmnJr6r68j3wzxIMCsNM047buvMcMOtNV2xqmurvSpOWX93XY/eK7DPdQ8WIe2M051+8Y+e8qy/m67Hzzf4R6+2wHy6vaNfb6bSTHD7rsdIK+urvSpOSlm2H23A8vWdUaqrq6UraWawWpzNuW7HViPKc93OpsCtsaqU13+X2dTwC7azmKlnC9wNgXrNcSsUso9XJezKd/swLIMcR5kDwekMEQt6bOHM6sOHBniPKjPfIH3gcCRqc8q2UsCbUzhvNr7QGDqjmrl1Ps/AIApmMI+EwBgzfRjAAAAAAAAAAAAAACUMW8OrNXdB5vNPZF7D8Z+EoB66hUwF+oVMBdzr1efzfS5ge7y9epittlcilyOXMnGfrJ2PlevYDXy9SqLHESuilzdow7oeWC56vqaffc8+Xp1LHJd5PrIDT1qjp4Hlquur0nV81S5JnJt5Fjkxrj/TZGbI7eoV0CJur6mbG2730qVfL06Hn8/ETkZOaXmACXq+pqytW3/kipjc9YF81Lsa/JnVvvseaZQK6ZQM4Hd7fvM6ohaAfSV6j1dkyn0V8VnmMIzAe2lek/XZAr9VfEZpvBMQHtDvafTy8CyzfGblSrFXmZJvw0Y7ix8CMX+aojfpqeD4Qx1Fj6EYn81xG9zPgXDGeosfAjFXmdJvw1Y1jcrxV5nSb8NAGAKvB8EpmqM94MAuxjj/SDALrwfBObC+0FgLsyaA3OReta8qv6pi0BfqetIVf3zDQ4sR9Pc077motQRoKumuad9zUXZpwFdNc097WsuSn8FdNU092QuCpiKprknc1EAAAAAMF/mMoC5MJcBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAS/AuxbJ9r
+  </data>
+ </layer>
+ <layer name="Capa de patrones 6" width="300" height="300">
+  <data encoding="base64" compression="zlib">
+   eJzt20luFDEUBuB2woZBIAYFBVgDK8QpAOUWgZCJDEwnQVyWYcGTyKI6altddIdyub5P+lWW7Gr1pp7K1qvZDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyPmW/m0OmKZ11oy+678X1pfmgGlaZ81QYwAAACi5neavXXfS/BWgVDNKc31/a5GtNH/tepjmrwClmlGa6/tbi7yKda8jbxasL80B07TOmtFn/X76m4PI4UWWmQOmq1sX+swtWqvGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/8uXjaH/AcByvqpXAAAAVXCeBIyF8yQAYGx24/3lbeRd5DjyIXJSGOfuBbhqe1Fr3kf2I6eRs8h5YZy7d2jOuaB9B/GcH0aOIh8jnyKfC+PcvUNzzgUA1KKlM6jLe0J7RGhLTWdQq7q8J7RHhLbUdAYFAMCwnE8BY+F8CgAAAKB9q/SLttRrCtRvlX7RlnpNgfqt0i+q1xQAmKofaTb7GfkV+Z2G/jcAeSn2axuRzcg1ezegYtejRt2I3IzcGkm9yn1r4xscaNvdeMbvRe5HHozkec99a+MbHGjbdjzjjyKPI08Kz3u3nyo3BqhBt58qNwaoQbefKjcGAJiSnSvKsp7G+9ezyHPvYUDlXlzUqZfqFVA59QoYC/UKGIsW6pX+eZiGFuqV/nmYhhbqFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMP4A9UjUy0=
+  </data>
+ </layer>
+ <layer name="Capa de patrones 4" width="300" height="300">
+  <data encoding="base64" compression="zlib">
+   eJzt27sOgkAQBVClsrT093xrDf8f15YEEkFgBs5JpiTZZm/YycxuBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkd9gvfQIgmqi5cAx6LmA5UXPhFPRcwHLkAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMyjrv5XAFNqqv+VzAKykFlAJjILyKSRVwBAEN5RQBbeUQAAANM4l/fWpdR1wLtrzLcAv7qVrLmXegzInDHfAvzqWbLmVeo9IHPGfAuwZe3ZB7MQsC5r6kG1Zx/MQsC66EEBWehBAUxPfwrIQn8KAAAAAIAo7DsDWdh3BrKw7wwAAEAkXbs2dnCAaLp2bezgAPSrq+4C5td3J7d+N7//dV0FzK/vTrqbAAAAAAAAwNpseWYDyMXMBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwDI+QxM70Q==
+  </data>
+ </layer>
+ <layer name="Capa de patrones 2" width="300" height="300">
+  <data encoding="base64" compression="zlib">
+   eJzt28lq3EAUBVBTXxWSLDIZMkImJ2RaZJ5H+//x86433ZZaHZVu+xy40NAISYu6UOjVwQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwL456PwDAQPoKSKGvgBT6Ckihr4AU+gpIMbSvnv/XpwA4n74CUugrIIW+AlLoKyCFvgJS6Csghb4CUugrIIW+AlLoKyCFvgJS6Csghb4CAAAAAAAAAAAAAGAJzLcDKfQVkEJfASn0FZBCXwEp9BWQQl8BKfQVkEJfASn0FZBCXwEp9BWQQl8BKfQVkEJfASn0FZBCXwEp9BWQQl8BKfQVkOKsr54NDAAAAAAAAADDHLfeTwAwzEnTWUCOE30FAIt33KYFYC5n+4spmcvbute7yvst7jnlWoCxPlTXfKx82qJzplwLLMvlWsdXKldnWs/b7C8/139fKl+3eMYp1+7Cee9oXw3DXK+1cqNys3KrcjjD2lnC/nJum95xn98bdulOrZW7lXuV+5UHndfOt7r/98qPtv43cDE9qvX/uPKk8rRy1LkPftb9f1V+t/W/E9nzwXQvah29rLyqvK686byu/tT9/1b+tfW/E9nzQX+X2vgA9HCtjQ9AD7fb+GyyOttpzhPYpYdtfDZZne005wn0tmledHW2s/ecJ7AsPc47X8R5UWA6550Bdst5ZyBF8nlnAACGW/fNwXlBYGnWfXPwrRMAAAAAAAAAAACAKczPAynMzwMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA++YUXj+HMg==
+  </data>
+ </layer>
+ <layer name="Capa de patrones 3" width="300" height="300">
+  <data encoding="base64" compression="zlib">
+   eJzt27sKwzAMBdDQP+27ndv/p8qYIRDk4Ed6DmgyhiwRCPlOEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADs73Nq/QUA23z1KwDo3jxflBRALfN8UVIALJ2jN16irokeWXIX+G+Z+fIWZ/eoR6LnlNytwVwN/crMl884e0W9E/92yd0azNXAKPQrAAAAAAAAAGhPHhHIaJF3lkcEMuSdAfYl7wyM4sh5Z+BYjpx3Bqhhbedg1wn0Zm3nYBcBAAAAAAAAAAAAQAnv54FReD8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbPUDaMU9xA==
+  </data>
+ </layer>
+ <layer name="Capa de patrones 5" width="300" height="300">
+  <data encoding="base64" compression="zlib">
+   eJzt2tlqwzAQBVCjP03TtM3exf9PJ28ihcTCDZaUc2AwAgmsB12MPMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQp10ahn3UIS39JgC3HSOnTlFneQVU5Cf9HX9GfUV9d5ZX13sF2jKm2+Oe9Lw3AAAAAAAeb04/Ve29WP75QV/yfqqS832ZW3svln9+0Je8n6rkfI8d92IBAAA8m9L7K4Cl5PdX9+LIXTZQA1EEAPD/fGMBrZBXQCvkFdCCdPUEqMEqQuklaj0xnPL5pWsB5niNrNlEvU3MnHx+6VqAOd4jaz6ithMzJ59furaE/nmgFfrnAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABY0i+VCB7/
+  </data>
+ </layer>
+ <layer name="Capa de patrones 7" width="300" height="300">
+  <data encoding="base64" compression="zlib">
+   eJzt3EEKACAIBMDoy/V/ogcIdbGEGfDuSVBkWwMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+N/rrDgDOTPMKAAAg1b4bRQXwk303igoAAAAAAADI46cAqMJPAQAAAAAAAAAAQOw2b0peFfDKbd5UVl6V+QdU4bceAKA+OyhQhR0UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAci3lMxNI
+  </data>
+ </layer>
+ <layer name="Capa de patrones 10" width="300" height="300">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAlwF+iwAB
+  </data>
+ </layer>
+ <objectgroup name="objects" width="300" height="300">
+  <object gid="630" x="1484" y="4692"/>
+  <object gid="629" x="1767" y="4296"/>
+  <object gid="631" x="1887" y="3050">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="943" y="2916">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="1361" y="3516">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="1935" y="3340">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="2159" y="3736">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="969" y="3692">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="1269" y="2946">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="2611" y="4620">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="2893" y="4962">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="3361" y="5134">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="3541" y="4962">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="2903" y="5114">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="2731" y="4092">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="2661" y="4310">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="2423" y="4152">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="3961" y="4050">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="3739" y="4532">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="3579" y="4254">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="3977" y="4736">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="4355" y="4454">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="3321" y="4612">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="2921" y="4412">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="2963" y="4434">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+  <object gid="631" x="2929" y="4408"/>
+  <object gid="631" x="3283" y="4220">
+   <properties>
+    <property name="ghost" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

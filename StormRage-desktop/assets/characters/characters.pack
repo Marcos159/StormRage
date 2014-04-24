@@ -199,3 +199,10 @@ pj_Move_up2
   orig: 36, 38
   offset: 0, 0
   index: -1
+shield
+  rotate: false
+  xy: 437, 77
+  size: 36, 38
+  orig: 36, 38
+  offset: 0, 0
+  index: -1
