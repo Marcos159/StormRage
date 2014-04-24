@@ -103,6 +103,16 @@ public class ResourceManager {
 					new Animation(0.25f, 
 					getAtlas("npcs").findRegion("twitch")));
 			
+			//CARGAMOS ENEMIGOS
+			loadResource("enemigos", new TextureAtlas(
+					Gdx.files.internal("enemies/enemigos.pack")));
+			
+			animations.put("fantasma",
+					new Animation(0.25f, 
+					getAtlas("enemigos").findRegion("fantasma_down1"),
+					getAtlas("enemigos").findRegion("fantasma_down2"),
+					getAtlas("enemigos").findRegion("fantasma_down3")));
+
 			
 			//Cargamos sonidos
 			ResourceManager.loadResource("attackLink", Gdx.audio.newSound(Gdx.files.internal("sounds/attackLink.mp3")));

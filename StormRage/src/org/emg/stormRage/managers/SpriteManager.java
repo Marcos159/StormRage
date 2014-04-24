@@ -8,9 +8,6 @@ import org.emg.stormRage.quests.Quest1;
 import org.emg.stormRage.quests.Quest2;
 import org.emg.stormRage.util.Constants;
 import org.emg.stormRage.util.Util;
-
-
-
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.GL10;
@@ -19,6 +16,7 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
+import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer.Cell;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.math.Rectangle;
@@ -79,13 +77,13 @@ public class SpriteManager {
 		
 		this.game=game;
 		
-		// Crea una cámara y muestra 30x20 unidades del mundo
+		// Crea una cámara 
 		camera = new OrthographicCamera();
-		camera.setToOrtho(false, 30, 20);
+		//TODO ESTO
+		camera.setToOrtho(false, 32, 32);
+		camera.zoom = 1 / 2f;
 		camera.update();	
-		// Activa face culling
-		Gdx.gl.glCullFace(GL20.GL_CULL_FACE);
-		mapRenderer = new OrthogonalTiledMapRenderer(LevelManager.map);
+		mapRenderer = new OrthogonalTiledMapRenderer(new TmxMapLoader().load(LevelManager.getCurrentLevelPath()));
 		batch = mapRenderer.getSpriteBatch();
 			
 	}
@@ -94,13 +92,12 @@ public class SpriteManager {
 		Gdx.gl.glClearColor(0, 0, 0.2f, 1);
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 		
-		// Fija la cámara para seguir al personaje en el centro de la pantalla y altura fija (eje y)
-		camera.position.set(player.position.x + 18 / 2, 125, 0);
+		// Fija la cámara para seguir al personaje en el centro de la pantalla
+		camera.position.set(player.position.x, player.position.y + 100, 0);
 		
-		camera.zoom = 1 / 2f;
 		camera.update();
 		mapRenderer.setView(camera);
-		mapRenderer.render(new int[]{0, 1});
+		mapRenderer.render();
 				
 		batch.begin();		
 		game.font.draw(game.batch, "dialogo", 100, 150 );
@@ -257,8 +254,7 @@ public class SpriteManager {
 		}
 		
 	}
-	
-	
+
 	
 	private void checkCollisions(float dt) {
 		Array<Rectangle> tiles = new Array<Rectangle>();
@@ -320,5 +316,11 @@ public class SpriteManager {
 				}
 			}
 		}
+	}
+public void resize(int width, int height) {
+		
+		camera.viewportHeight = height;
+		camera.viewportWidth = width;
+		camera.update();
 	}
 }

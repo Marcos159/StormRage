@@ -26,7 +26,7 @@ public class GameScreen implements Screen {
 		
 		spriteManager = new SpriteManager(game);
 		levelManager = new LevelManager(spriteManager);
-		//TODO
+		
 		levelManager.loadMap();
 	}
 	
@@ -65,9 +65,8 @@ public class GameScreen implements Screen {
 	}
 
 	@Override
-	public void resize(int arg0, int arg1) {
-		// TODO Auto-generated method stub
-		
+	public void resize(int width, int height) {
+		spriteManager.resize(width, height);
 	}
 
 	@Override

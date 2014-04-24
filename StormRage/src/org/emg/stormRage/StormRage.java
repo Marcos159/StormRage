@@ -17,7 +17,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 public class StormRage extends Game{
 	public SpriteBatch batch;
 	public BitmapFont font;
-	OrthographicCamera camera;
+	
 	public boolean paused;
 	
 	public enum GameState {
@@ -30,11 +30,7 @@ public class StormRage extends Game{
 	public void create() {
 		batch = new SpriteBatch();
 		font = new BitmapFont();
-		camera = new OrthographicCamera();
-		camera.setToOrtho(true, Constants.SCREEN_WIDTH, 
-			Constants.SCREEN_HEIGHT);
-		camera.update();
-		
+
 		setScreen(new MainMenuScreen(this));
 	}
 	
@@ -48,6 +44,7 @@ public class StormRage extends Game{
 		batch.dispose();
 		font.dispose();
 	}
+	
 	
 	
 }
