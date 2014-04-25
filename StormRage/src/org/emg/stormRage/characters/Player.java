@@ -97,7 +97,6 @@ public class Player extends Character{
 		rect.x = position.x;
 		rect.y = position.y;
 		
-		//TODO QUITAR ESTO PARA VER SI ME DEJA AVANZAR
 		if(position.x<0){
 			position.x = 0;
 		}

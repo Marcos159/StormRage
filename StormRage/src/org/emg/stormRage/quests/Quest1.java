@@ -42,7 +42,7 @@ public class Quest1 extends Character {
 				" Mierda, donde se han metido los dados...";
 		SpriteManager.dialogo = dialogo;
 		
-		state = Quest1.State.ACTIVE;
+		state = Quest1.State.FINISHED;
 		
 		Util.npcText = true;
 	}
@@ -56,6 +56,7 @@ public class Quest1 extends Character {
 			//No hay q hacer nada
 			break;
 		case COMPLETE:
+			dialogoFinal();
 			break;
 		case FINISHED:
 			break;

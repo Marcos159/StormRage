@@ -1,5 +1,7 @@
 package org.emg.stormRage.managers;
 
+import java.util.Iterator;
+
 import org.emg.stormRage.StormRage;
 import org.emg.stormRage.characters.Player;
 import org.emg.stormRage.enemies.Enemy;
@@ -7,6 +9,7 @@ import org.emg.stormRage.enemies.Ghost;
 import org.emg.stormRage.quests.Quest1;
 import org.emg.stormRage.quests.Quest2;
 import org.emg.stormRage.util.Constants;
+import org.emg.stormRage.util.Posiciones;
 import org.emg.stormRage.util.Util;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
@@ -19,8 +22,10 @@ import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer.Cell;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.badlogic.gdx.math.Intersector;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Pool;
 import com.badlogic.gdx.utils.TimeUtils;
@@ -42,12 +47,15 @@ public class SpriteManager {
 	
 	//ENIMIGOS
 	public  Array<Ghost> ghosts;
+	Iterator<Ghost> iterGhost;
 	public  Array<Enemy> enemies;
+	Iterator<Enemy> iterEnemy;
 	
 	//NPCS
 	public  Array<Quest1> quests1;
+	Iterator<Quest1> iterQuest1;
 	public  Array<Quest2> quests2;
-	
+	Iterator<Quest2> iterQuest2;
 	
 	// Pool de rectángulos (mejora la eficiencia si se trabaja con muchos)
 	private Pool<Rectangle> rectPool = new Pool<Rectangle>() {
@@ -59,15 +67,18 @@ public class SpriteManager {
 	
 	public OrthographicCamera camera;
 	public static float CAMERA_OFFSET = 0;
+	
 	public SpriteBatch batch;
 	OrthogonalTiledMapRenderer mapRenderer;
+	
+	boolean ciclo=true;
 	
 	public SpriteManager(StormRage game) {
 		Util.npcText = false;
 		shield = new Texture("characters/shield.png");
 		
 		player = new Player(ResourceManager.getAtlas("characters")
-				.findRegion("pj_Move_up1"), 100, 100, 200, 100, 20, 20);
+				.findRegion("pj_Move_up1"), 400, 100, 200, 100, 20, 20);
 		
 		ghosts = new Array<Ghost>();
 		enemies = new Array<Enemy>();
@@ -79,22 +90,18 @@ public class SpriteManager {
 		
 		// Crea una cámara 
 		camera = new OrthographicCamera();
-		//TODO ESTO
-		camera.setToOrtho(false, 32, 32);
-		camera.zoom = 1 / 2f;
+		camera.setToOrtho(false, 1024, 1024);
 		camera.update();	
+		
 		mapRenderer = new OrthogonalTiledMapRenderer(new TmxMapLoader().load(LevelManager.getCurrentLevelPath()));
-		batch = mapRenderer.getSpriteBatch();
-			
+		batch = mapRenderer.getSpriteBatch();	
 	}
 	
+	
 	public void render(SpriteBatch batch) {
-		Gdx.gl.glClearColor(0, 0, 0.2f, 1);
+		Gdx.gl.glClearColor(0, 0, 0, 0);
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
-		
-		// Fija la cámara para seguir al personaje en el centro de la pantalla
-		camera.position.set(player.position.x, player.position.y + 100, 0);
-		
+
 		camera.update();
 		mapRenderer.setView(camera);
 		mapRenderer.render();
@@ -102,60 +109,73 @@ public class SpriteManager {
 		batch.begin();		
 		game.font.draw(game.batch, "dialogo", 100, 150 );
 		game.font.draw(game.batch, dialogo, 100, 150 );
+		renderNPC(batch);
 		
+		batch.end();
+	}
+	
+	public void renderNPC(SpriteBatch batch){
 		//Player
 		player.render(batch);
 		if(!player.damage){
 			batch.draw(shield, player.position.x, player.position.y);
 		}
-		
+				
 		//ENEMIGOS
 		for (Enemy enemy : enemies)
 			enemy.render(batch);
 		for (Ghost ghost : ghosts)
 			ghost.render(batch);
-		
+				
 		//NPCS
 		for (Quest1 quest1 : quests1)
 			quest1.render(batch);
 		for (Quest2 quest2 : quests2)
 			quest2.render(batch);
-		
-		batch.end();
 	}
 		
 	
 	public void update(float dt) {
+		// Fija la cámara para seguir al personaje en el centro de la pantalla
+		//camera.position.set(400, 2000, 0);
+		camera.position.set(player.position.x, player.position.y,0);
+		
 		handleInput(dt);
 		checkCollisions(dt);
+		checkGolpes(dt);
+		checkDialogos(dt);
 		updatenpcCamara(dt);
 		player.update(dt);
 		
-		for (Enemy enemy : enemies)
-			enemy.update(dt);
-		for (Ghost ghost : ghosts)
-			ghost.update(dt);
-		
-		for (Quest1 quest1 : quests1)
-			quest1.update(dt);
-		for (Quest2 quest2 : quests2)
-			quest2.update(dt);
+		if(ciclo){
+			for (Enemy enemy : enemies)
+				enemy.update(dt);
+			for (Ghost ghost : ghosts)
+				ghost.update(dt);
+	
+			for (Quest1 quest1 : quests1)
+				quest1.update(dt);
+			for (Quest2 quest2 : quests2)
+				quest2.update(dt);
+			ciclo=false;
+		}
 		
 	}
 	
 	public void updatenpcCamara(float dt){
-		/*// Comprueba el estado de los enemigos
-				for (Enemy enemy : LevelManager.enemies) {
-					
-					// Si la cámara no los enfoca no se actualizan
-					if (!game.gameRenderer.camera.frustum.pointInFrustum(new Vector3(enemy.position.x, enemy.position.y, 0)))
-						continue;
-				
-					if (enemy.isAlive)
-						enemy.update(dt);
-					else
-						LevelManager.enemies.removeValue(enemy, true);
-				}*/
+		// Comprueba el estado de los enemigos
+		for (Ghost ghost : ghosts) {	
+			// Si la cámara no los enfoca no se actualizan
+			if (!camera.frustum.pointInFrustum(new Vector3(ghost.position.x, ghost.position.y, 0)))
+				continue;
+			ghost.update(dt);
+		}
+		for (Enemy enemy : enemies) {	
+			// Si la cámara no los enfoca no se actualizan
+			if (!camera.frustum.pointInFrustum(new Vector3(enemy.position.x, enemy.position.y, 0)))
+				continue;
+			enemy.update(dt);
+		}
 	}
 	
 	private void handleInput(float dt) {
@@ -165,6 +185,7 @@ public class SpriteManager {
 				player.posicion = Player.Posicion.UP;
 				System.out.println("MOVIMIENTO UP");
 				player.move(new Vector2(0,dt));	
+				
 			}
 			else if(Gdx.input.isKeyPressed(Keys.DOWN)){
 				player.state = Player.State.DOWN;
@@ -289,6 +310,7 @@ public class SpriteManager {
 		
 	}
 	
+	
 	/**
 	 * Obtiene la lista de celdas de interés en las que está situado el jugador
 	 * Ahora mismo sólo comprueba las celdas de las casas
@@ -316,6 +338,62 @@ public class SpriteManager {
 				}
 			}
 		}
+	}
+	
+	public void checkGolpes(float dt){
+		iterGhost = ghosts.iterator();
+		while (iterGhost.hasNext()) {
+			Ghost ghost = iterGhost.next();
+			if (Intersector.overlaps(ghost.rect, player.rect)) {
+				switch (player.state){
+				case ATTACK_UP:
+					if(ghost.position.y>player.position.y){
+						iterGhost.remove();
+					}else{
+						iterGhost.remove();	
+					}
+					break;
+				case ATTACK_DOWN:
+					if(ghost.position.y<player.position.y){
+						iterGhost.remove();
+					}else{
+						iterGhost.remove();	
+						System.out.println("MUERTO");
+					}
+					break;
+				case ATTACK_RIGHT:
+					if(ghost.position.x>player.position.x){
+						iterGhost.remove();
+					}else{
+						iterGhost.remove();	
+					}
+					break;
+				case ATTACK_LEFT:
+					if(ghost.position.x<player.position.x){
+						iterGhost.remove();
+					}else{
+						iterGhost.remove();	
+						System.out.println("MUERTO");
+					}
+					break;
+				default:
+					iterGhost.remove();	
+					System.out.println("DAÑO");
+				}
+				
+			}
+		}
+	}
+	
+	public void checkDialogos(float dt){
+		iterQuest1 = quests1.iterator();
+		while (iterQuest1.hasNext()) {
+			Quest1 quest1 = iterQuest1.next();
+			if (Intersector.overlaps(quest1.rect, player.rect)) {
+				quest1.controlador();
+			}
+		}
+		
 	}
 public void resize(int width, int height) {
 		

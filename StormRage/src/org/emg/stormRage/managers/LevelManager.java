@@ -24,7 +24,7 @@ public class LevelManager {
 	public static int currentLevel;
 	// Info del LevelManager
 	public static final String LEVEL_DIR = "levels";
-	public static final String LEVEL_PREFIX = "maparr";
+	public static final String LEVEL_PREFIX = "levelredim";
 	public static final String LEVEL_EXTENSION = ".tmx";
 	// Mapa del nivel actual
 	public static TiledMap map;
@@ -79,6 +79,7 @@ public class LevelManager {
 					Rectangle rect = rectangleObject.getRectangle();
 					ghost = new Ghost(ResourceManager.getAnimation("fantasma"), rect.x , rect.y, 90);
 					spriteManager.ghosts.add(ghost);
+					System.out.println("Carga");
 				}
 			}
 		}

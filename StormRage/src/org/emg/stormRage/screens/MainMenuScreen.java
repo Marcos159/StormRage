@@ -25,8 +25,8 @@ public class MainMenuScreen implements Screen {
 	public MainMenuScreen(StormRage game) {
 		this.game = game;
 		 Texture.setEnforcePotImages(false);
-		
 		background1 = new Texture("others/backgroundforest.png");
+
 	}
 	
 	@Override
@@ -40,7 +40,7 @@ public class MainMenuScreen implements Screen {
 
 		Gdx.gl.glClearColor(0, 0, 0.2f, 1);
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
-				
+		
 		// Muestra un menú de inicio
 		game.batch.begin();
 		game.batch.draw(background1, 0, 0);
