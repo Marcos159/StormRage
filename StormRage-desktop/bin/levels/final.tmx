@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="80" height="80" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="025-Castle01" tilewidth="32" tileheight="32">
+  <properties>
+   <property name="" value=""/>
+  </properties>
+  <image source="recopilacion/025-Castle01.png" width="256" height="896"/>
+  <tile id="11">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="56">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="57">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="58">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="64">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="65">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="66">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="72">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="73">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="74">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="75">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="105">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="106">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="107">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="113">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="115">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="121">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="122">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="123">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="130">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="131">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="144">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="152">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="154">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="162">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="171">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="176">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="186">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="192">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="193">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="194">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="225" name="026-Castle02" tilewidth="32" tileheight="32">
+  <image source="recopilacion/026-Castle02.png" width="256" height="800"/>
+  <tile id="40">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="41">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="64">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="65">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="66">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="72">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="74">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="79">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="81">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="82">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="88">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="89">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="90">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="96">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="98">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="104">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="105">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="106">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="144">
+   <properties>
+    <property name="block" value=""/>
+   </properties>
+  </tile>
+  <tile id="145">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="164">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+  <tile id="167">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="425" name="027-Castle03" tilewidth="32" tileheight="32">
+  <image source="recopilacion/027-Castle03.png" width="256" height="800"/>
+  <tile id="156">
+   <properties>
+    <property name="block" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Capa de patrones 3" width="80" height="80">
+  <data encoding="base64" compression="zlib">
+   eJztnDFuwjAYRu1u7VF6g7YT9IbdIBPtRDtVnVAn1LtwjtoSln4SJ/3NFzex8z3pSQjFAr+AgSjBGEIIIYSQZbN3figkcT6dXwpJnIPzWyGJc3T+KCRdNk5bsCvn2vms3H5s2A+D/TDYD4P9MNgPg/0w2A+D/TDYD4P9MNgPg/0w2A+D/TDYD4P9MNgPo/R+a8N+7Md+pboy7Md+7Feq7Md+7Feu7Md+7FeuU/fbgY+Jzv/B+Qgo+11L7n2c87HD/FGRfmNxYy9tzHA/2eFFuNR+d/ZSbT+/hm6Fjbmu35ScMqjt4NfQ0C7Afv392uxb40zPdjGq72e766LUczDdfkNj5Nja+93a7roo9RxNt9/QGDm2tn739rJfjv0iO8+t38bNf3u2sdj82I/9tOTol1sP+7Ef37/sh5K7Xyr+N8n7gOF69tr7HRVuIs9Hez37Evr9dQwg1k97PXvt/TTHUGL9tNezs1+8n/a4vDwGOiVT9ttFno98XWmdCr//c/R7M8vpFzj03NbQ/m6m/c+cfeS+uaxrqYRmJ5Peb0xK7hdeQ+yXTugXbrfRrGfXKqmxX8523th5AaX2C5+/ktz9+j5zS8L3e7Xsl4Kcg+8nv//Jtem/+s3hXIoUcndZQj/NNuwXh/0w2A9j6nWv9H7oObBj+GTmdS5jCmG/z0X2q7vfL21nztk=
+  </data>
+ </layer>
+ <layer name="Capa de Patrones 1" width="80" height="80">
+  <data encoding="base64" compression="zlib">
+   eJzt3D8zA0EcxvFEVBlvAoV/TVChQpV4J6hQ4U1EKqNCRSqjQoUKFSq8Gb+duRs3O7nc7t25y+59PzPPuLuckzyTvT/FqtUAAIDLupILT3KZczcmToOffQ9ylWcxhsL+bj3ITZ7FGAr7e/Agd3kWYyjs79mDPOZZTEW0JZ0gAAAAAAAAAAAAAAAAAAC/1IcEf0609ILtw/qjy2RJnXW1/Xs1RPF9g2vUmNbPp3Hn1yobyzCQz/J7G7mZrQ9enpTlKcNMW3TS9Ky/lnyemSCtyGebk+V5wywUdHEYxf7iLEonS4ZZpj8n0F829JcN/WXjUn8rck1YNcxaQdePMuaLp7UunWwYZjPSn5rTfZ2QtPoZfrdobemkY5itSH9qTvJ9QtIqY7540dSc5KeEpFXGfHGfMF8cKN952W9gRJneX5Txf2sAQPnP88+45XYX2TwHNSPLDe21xoD9JrTXGtp2/Zgusn0O0r87SeuhuJ5c/y7aPgdNWK4r25Idya7B8Vz0InmNyVsOx9+T7EsOgnXXx6zuXfIRk09tX5Pxq/dzKDmSHA/4266PX8WmvzTjdxgfxq9pf7bX3yrcvyhfku+Y/GQ4bhXuXwC44xeduRPu
+  </data>
+ </layer>
+ <layer name="Capa de patrones 2" width="80" height="80">
+  <data encoding="base64" compression="zlib">
+   eJzt2TFOwzAYhmGHDS4WFu7BJRh7AGBqMwETJEtBgCgTcDFsyZb+uimKsRPHyvtIn2qlyDVfiYkSpQAAAAAAAAAAAAAAAAAAAAAAAAAAU7jWuUmQpVrrVJVSJ5FZKtPfqf79zyKzVOvcC9DuRR4yryXUHPqT2twLCBTS3+UE5+nH+B+RVEh/59XhuK4O34vxlWaayQztr+7pzr2av8tU/ZVmbvtfaegvDv3Fob84rr+rnv2/7xj2uf5WPV2tev7nDh0vxdDz98Jeo/x1HVP/oz93/2djX2/Dp8hqDvvfRqTJvJZQ9BeH/uLQX5zc/ZnPL7m/3Pz+Srx/6p4ByXEjxuaa4lHnKSDtwJ/z5y3x/qn77uW48cZbnVedt8R5t3O/iJREdnan9p9DyP7MfeHPkeLPXRLTmetJnkut2t+TzH3hn5Hiz12aIXsZjnu26Y6Mt/mWVoSdTSeOdeJ4ac/EpvZt4/fnjpf2TAwAAABI5Re3f7Gp
+  </data>
+ </layer>
+ <layer name="Capa de patrones 4" width="80" height="80">
+  <data encoding="base64" compression="zlib">
+   eJzt1c1KxDAQAOB0Lwo9uC/k0bPe9BX0pndBUGFBD/5cfFwju0Vd0tY1rdLm+2CYYZKF7dA0IQAAAAAAAAAAAAAAAAAAJTivQriohq1Lchmf+aoatibfc4yXjnj9v782GSeLdT7eyk2fdoc9M+pbL91Ry3xOY/9s0b4+RTeJ736qt4tmTiVYJWaV6gFlcP/m6btf53T/kuc6cdemer9x98PelN0nZpXq7WIvxn6Mx8Raqsd3BzGW4XOOTa6/1HMxxvmtN7mZY5PDVj0HY5zfD13vXt3xO9ZKePdgCm5HrufuYeQa4C+tBtpTqqeB9pTqbaA9pXJ+8zi/eZxfoBTvBlgu3w==
+  </data>
+ </layer>
+</map>
