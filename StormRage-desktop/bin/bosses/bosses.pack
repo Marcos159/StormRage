@@ -1,0 +1,89 @@
+
+bosses.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+espirituBosque
+  rotate: false
+  xy: 1, 261
+  size: 288, 192
+  orig: 288, 192
+  offset: 0, 0
+  index: -1
+espirituFuego
+  rotate: false
+  xy: 1, 67
+  size: 288, 192
+  orig: 288, 192
+  offset: 0, 0
+  index: -1
+espirituHielo
+  rotate: false
+  xy: 291, 261
+  size: 288, 192
+  orig: 288, 192
+  offset: 0, 0
+  index: -1
+espirituBosque1
+  rotate: false
+  xy: 1, 1
+  size: 96, 64
+  orig: 96, 64
+  offset: 0, 0
+  index: -1
+espirituBosque2
+  rotate: false
+  xy: 291, 195
+  size: 96, 64
+  orig: 96, 64
+  offset: 0, 0
+  index: -1
+espirituBosque3
+  rotate: false
+  xy: 581, 389
+  size: 96, 64
+  orig: 96, 64
+  offset: 0, 0
+  index: -1
+espirituFuego1
+  rotate: false
+  xy: 99, 1
+  size: 96, 64
+  orig: 96, 64
+  offset: 0, 0
+  index: -1
+espirituFuego2
+  rotate: false
+  xy: 291, 129
+  size: 96, 64
+  orig: 96, 64
+  offset: 0, 0
+  index: -1
+espirituFuego3
+  rotate: false
+  xy: 389, 195
+  size: 96, 64
+  orig: 96, 64
+  offset: 0, 0
+  index: -1
+espirituHielo1
+  rotate: false
+  xy: 581, 323
+  size: 96, 64
+  orig: 96, 64
+  offset: 0, 0
+  index: -1
+espirituHielo2
+  rotate: false
+  xy: 679, 389
+  size: 96, 64
+  orig: 96, 64
+  offset: 0, 0
+  index: -1
+espirituHielo3
+  rotate: false
+  xy: 389, 129
+  size: 96, 64
+  orig: 96, 64
+  offset: 0, 0
+  index: -1
